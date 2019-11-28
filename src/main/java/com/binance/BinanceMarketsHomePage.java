@@ -1,4 +1,4 @@
-package example;
+package com.binance;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
