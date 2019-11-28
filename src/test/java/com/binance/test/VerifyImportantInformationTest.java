@@ -18,7 +18,7 @@ public class VerifyImportantInformationTest {
     public void setUp() {
         Tradeling.getInstance().openBrowser();
         driver = Tradeling.getInstance().getDriver();
-        Tradeling.getInstance().navigateToUrl();
+        Tradeling.getInstance().navigateToBinanceHome();
         binanceHomePage = new BinanceHomePage();
         binanceETHBTCHomePage = binanceHomePage.clickMarketMenu().clickETHBTCLink();
     }

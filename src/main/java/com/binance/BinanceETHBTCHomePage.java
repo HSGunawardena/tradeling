@@ -72,11 +72,11 @@ public class BinanceETHBTCHomePage {
     public boolean isCryptocurrencyPairNamesAvailable() throws Exception {
         WebElement webElement;
         Thread.sleep(2000);
-        try{
+        try {
             webElement = driver.findElement(By.xpath(binanceCryptocrrencyPairNameElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isCryptocurrencyPairNamesAvailable");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isCryptocurrencyPairNamesAvailable");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isCryptocurrencyPairNamesAvailable_failed");
             return false;
         }
@@ -85,11 +85,11 @@ public class BinanceETHBTCHomePage {
     public boolean isTardingOrderBookAvailable() throws Exception {
         WebElement webElement;
         Thread.sleep(2000);
-        try{
+        try {
             webElement = driver.findElement(By.xpath(binanceTradingOrderBookElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isTardingOrderBookAvailable");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isTardingOrderBookAvailable");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isTardingOrderBookAvailable_failed");
             return false;
         }
@@ -98,11 +98,11 @@ public class BinanceETHBTCHomePage {
     public boolean isTradingLastPriceAvailable() throws Exception {
         WebElement webElement;
         Thread.sleep(2000);
-        try{
+        try {
             webElement = driver.findElement(By.xpath(binanceTradingLastPriceElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isTradingLastPriceAvailable");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isTradingLastPriceAvailable");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isTradingLastPriceAvailable_failed");
             return false;
         }
@@ -111,11 +111,11 @@ public class BinanceETHBTCHomePage {
     public boolean isTrading24HChangeAvailable() throws Exception {
         WebElement webElement;
         Thread.sleep(2000);
-        try{
+        try {
             webElement = driver.findElement(By.xpath(binanceTrading24HChangeElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isTrading24HChangeAvailable");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isTrading24HChangeAvailable");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isTrading24HChangeAvailable_failed");
             return false;
         }
@@ -124,11 +124,11 @@ public class BinanceETHBTCHomePage {
     public boolean isTrading24HHighAvailable() throws Exception {
         WebElement webElement;
         Thread.sleep(2000);
-        try{
+        try {
             webElement = driver.findElement(By.xpath(binanceTrading24HHighElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isTrading24HHighAvailable");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isTrading24HHighAvailable");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isTrading24HHighAvailable_failed");
             return false;
         }
@@ -137,11 +137,11 @@ public class BinanceETHBTCHomePage {
     public boolean isTrading24HLowAvailable() throws Exception {
         WebElement webElement;
         Thread.sleep(2000);
-        try{
+        try {
             webElement = driver.findElement(By.xpath(binanceTrading24HLowElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isTrading24HLowAvailable");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isTrading24HLowAvailable");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isTrading24HLowAvailable_failed");
             return false;
         }
@@ -150,11 +150,11 @@ public class BinanceETHBTCHomePage {
     public boolean isTrading24HVolumeAvailable() throws Exception {
         WebElement webElement;
         Thread.sleep(2000);
-        try{
+        try {
             webElement = driver.findElement(By.xpath(binanceTrading24HVolumeElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isTrading24HVolumeAvailable");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isTrading24HVolumeAvailable");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isTrading24HVolumeAvailable_failed");
             return false;
         }
@@ -165,11 +165,11 @@ public class BinanceETHBTCHomePage {
 //        Tradeling.getInstance().waitForElement(By.xpath(binanceTradingChartElement),15);
 //        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         Thread.sleep(2000);
-        try{
+        try {
             webElement = driver.findElement(By.xpath(binanceTradingChartElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isTradingChartAvailable");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isTradingChartAvailable");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isTradingChartAvailable_failed");
             return false;
         }
@@ -179,11 +179,11 @@ public class BinanceETHBTCHomePage {
         WebElement webElement;
         Thread.sleep(2000);
 
-        try{
+        try {
             webElement = driver.findElement(By.id(binanceOrderGridExchangeTabLimitElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isExchangeLimitTabAvailable");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isExchangeLimitTabAvailable");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isExchangeLimitTabAvailable_failed");
             return false;
         }
@@ -193,11 +193,11 @@ public class BinanceETHBTCHomePage {
         WebElement webElement;
         Thread.sleep(2000);
 
-        try{
+        try {
             webElement = driver.findElement(By.id(binanceOrderGridExchangeTabMarketElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isExchangeLimitTabAvailable");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isExchangeLimitTabAvailable");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isExchangeLimitTabAvailable_failed");
             return false;
         }
@@ -207,11 +207,11 @@ public class BinanceETHBTCHomePage {
         WebElement webElement;
         Thread.sleep(2000);
 
-        try{
+        try {
             webElement = driver.findElement(By.xpath(binanceOrderGridExchangeTabStopLimitDropdownElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isStopLimitDropdownValueAvailable");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isStopLimitDropdownValueAvailable");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isStopLimitDropdownValueAvailable_failed");
             return false;
         }
@@ -221,11 +221,11 @@ public class BinanceETHBTCHomePage {
         WebElement webElement;
         Thread.sleep(2000);
 
-        try{
+        try {
             webElement = driver.findElement(By.xpath(binanceOrderGridBuyETHLabelElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isBuyETHLabelAvailable");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isBuyETHLabelAvailable");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isBuyETHLabelAvailable_failed");
             return false;
         }
@@ -235,11 +235,11 @@ public class BinanceETHBTCHomePage {
         WebElement webElement;
         Thread.sleep(2000);
 
-        try{
+        try {
             webElement = driver.findElement(By.xpath(binanceOrderGridSellETHLabelElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isSellETHLabelAvailable");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isSellETHLabelAvailable");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isSellETHLabelAvailable_failed");
             return false;
         }
@@ -249,11 +249,11 @@ public class BinanceETHBTCHomePage {
         WebElement webElement;
         Thread.sleep(2000);
 
-        try{
+        try {
             webElement = driver.findElement(By.id(binanceOrderGridBuyPriceInputElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isBuyPriceInputAvailable");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isBuyPriceInputAvailable");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isBuyPriceInputAvailable_failed");
             return false;
         }
@@ -263,11 +263,11 @@ public class BinanceETHBTCHomePage {
         WebElement webElement;
         Thread.sleep(2000);
 
-        try{
+        try {
             webElement = driver.findElement(By.id(binanceOrderGridBuyAmountInputElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isBuyAmountInputAvailable");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isBuyAmountInputAvailable");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isBuyAmountInputAvailable_failed");
             return false;
         }
@@ -277,11 +277,11 @@ public class BinanceETHBTCHomePage {
         WebElement webElement;
         Thread.sleep(2000);
 
-        try{
+        try {
             webElement = driver.findElement(By.id(binanceOrderGridBuyTotalInputElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isBuyTotalInputAvailable");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isBuyTotalInputAvailable");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isBuyTotalInputAvailable_failed");
             return false;
         }
@@ -291,11 +291,11 @@ public class BinanceETHBTCHomePage {
         WebElement webElement;
         Thread.sleep(2000);
 
-        try{
+        try {
             webElement = driver.findElement(By.id(binanceOrderGridBuyAmountPct25InputElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isBuyAmountPct25Available");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isBuyAmountPct25Available");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isBuyAmountPct25Available_failed");
             return false;
         }
@@ -305,11 +305,11 @@ public class BinanceETHBTCHomePage {
         WebElement webElement;
         Thread.sleep(2000);
 
-        try{
+        try {
             webElement = driver.findElement(By.id(binanceOrderGridBuyAmountPct50InputElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isBuyAmountPct50Available");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isBuyAmountPct50Available");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isBuyAmountPct50Available_failed");
             return false;
         }
@@ -319,11 +319,11 @@ public class BinanceETHBTCHomePage {
         WebElement webElement;
         Thread.sleep(2000);
 
-        try{
+        try {
             webElement = driver.findElement(By.id(binanceOrderGridBuyAmountPct75InputElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isBuyAmountPct75Available");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isBuyAmountPct75Available");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isBuyAmountPct75Available_failed");
             return false;
         }
@@ -333,11 +333,11 @@ public class BinanceETHBTCHomePage {
         WebElement webElement;
         Thread.sleep(2000);
 
-        try{
+        try {
             webElement = driver.findElement(By.id(binanceOrderGridBuyAmountPct100InputElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isBuyAmountPct100Available");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isBuyAmountPct100Available");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isBuyAmountPct100Available_failed");
             return false;
         }
@@ -347,11 +347,11 @@ public class BinanceETHBTCHomePage {
         WebElement webElement;
         Thread.sleep(2000);
 
-        try{
+        try {
             webElement = driver.findElement(By.id(binanceOrderGridSellPriceInputElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isSellPriceInputAvailable");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isSellPriceInputAvailable");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isSellPriceInputAvailable_failed");
             return false;
         }
@@ -361,11 +361,11 @@ public class BinanceETHBTCHomePage {
         WebElement webElement;
         Thread.sleep(2000);
 
-        try{
+        try {
             webElement = driver.findElement(By.id(binanceOrderGridSellAmountInputElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isSellAmountInputAvailable");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isSellAmountInputAvailable");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isSellAmountInputAvailable_failed");
             return false;
         }
@@ -375,11 +375,11 @@ public class BinanceETHBTCHomePage {
         WebElement webElement;
         Thread.sleep(2000);
 
-        try{
+        try {
             webElement = driver.findElement(By.id(binanceOrderGridSellTotalInputElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isSellTotalInputAvailable");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isSellTotalInputAvailable");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isSellTotalInputAvailable_failed");
             return false;
         }
@@ -389,11 +389,11 @@ public class BinanceETHBTCHomePage {
         WebElement webElement;
         Thread.sleep(2000);
 
-        try{
+        try {
             webElement = driver.findElement(By.id(binanceOrderGridSellAmountPct25InputElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isSellAmountPct25Available");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isSellAmountPct25Available");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isSellAmountPct25Available_failed");
             return false;
         }
@@ -403,11 +403,11 @@ public class BinanceETHBTCHomePage {
         WebElement webElement;
         Thread.sleep(2000);
 
-        try{
+        try {
             webElement = driver.findElement(By.id(binanceOrderGridSellAmountPct50InputElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isSellAmountPct50Available");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isSellAmountPct50Available");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isSellAmountPct50Available_failed");
             return false;
         }
@@ -417,11 +417,11 @@ public class BinanceETHBTCHomePage {
         WebElement webElement;
         Thread.sleep(2000);
 
-        try{
+        try {
             webElement = driver.findElement(By.id(binanceOrderGridSellAmountPct75InputElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isSellAmountPct75Available");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isSellAmountPct75Available");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isSellAmountPct75Available_failed");
             return false;
         }
@@ -431,11 +431,11 @@ public class BinanceETHBTCHomePage {
         WebElement webElement;
         Thread.sleep(2000);
 
-        try{
+        try {
             webElement = driver.findElement(By.id(binanceOrderGridSellAmountPct100InputElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isSellAmountPct100Available");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isSellAmountPct100Available");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isSellAmountPct100Available_failed");
             return false;
         }
@@ -445,11 +445,11 @@ public class BinanceETHBTCHomePage {
         WebElement webElement;
         Thread.sleep(2000);
 
-        try{
+        try {
             webElement = driver.findElement(By.xpath(binanceMyOpenOrdersGridElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isMyOpenOrdersGridAvailable");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isMyOpenOrdersGridAvailable");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isMyOpenOrdersGridAvailable_failed");
             return false;
         }
@@ -459,13 +459,54 @@ public class BinanceETHBTCHomePage {
         WebElement webElement;
         Thread.sleep(2000);
 
-        try{
+        try {
             webElement = driver.findElement(By.xpath(binanceMy24HOrderHistoryElement));
-            Tradeling.getInstance().takeSnapOfElement(webElement,"isMy24HOpenOrderHistoryGridAvailable");
+            Tradeling.getInstance().takeSnapOfElement(webElement, "isMy24HOpenOrderHistoryGridAvailable");
             return true;
-        }catch(NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             Tradeling.getInstance().takeFullSnap("isMy24HOpenOrderHistoryGridAvailable_failed");
             return false;
         }
     }
+
+    public BinanceETHBTCHomePage setETHBuyPrice(double price) {
+        Tradeling.getInstance().waitForElement(By.id(binanceOrderGridBuyPriceInputElement), 10);
+        String stringPrice = String.valueOf(price);
+        driver.findElement(By.id(binanceOrderGridBuyPriceInputElement)).sendKeys(stringPrice);
+        return this;
+    }
+
+    public double getETHBuyPrice() {
+        Tradeling.getInstance().waitForElement(By.id(binanceOrderGridBuyPriceInputElement), 10);
+        String price = driver.findElement(By.id(binanceOrderGridBuyPriceInputElement)).getAttribute("value");
+        double floatPrice = Double.parseDouble(price);
+        return floatPrice;
+    }
+
+    public BinanceETHBTCHomePage setETHBuyAmount(double amount) {
+        Tradeling.getInstance().waitForElement(By.id(binanceOrderGridBuyAmountInputElement), 10);
+        String stringAmount = String.valueOf(amount);
+        driver.findElement(By.id(binanceOrderGridBuyAmountInputElement)).sendKeys(stringAmount);
+        return this;
+    }
+
+    public void submitForm() {
+        Tradeling.getInstance().waitForElement(By.id(binanceOrderGridBuyAmountInputElement), 10);
+        driver.findElement(By.id(binanceOrderGridBuyAmountInputElement)).submit();
+    }
+
+    public double getETHBuyAmount() {
+        Tradeling.getInstance().waitForElement(By.id(binanceOrderGridBuyAmountInputElement), 10);
+        String amount = driver.findElement(By.id(binanceOrderGridBuyAmountInputElement)).getAttribute("value");
+        double doubleAmount = Double.parseDouble(amount);
+        return doubleAmount;
+    }
+
+    public double getETHBuyTotal() {
+        Tradeling.getInstance().waitForElement(By.id(binanceOrderGridBuyTotalInputElement), 10);
+        String totalValue = driver.findElement(By.id(binanceOrderGridBuyTotalInputElement)).getAttribute("value");
+        double doubleTotal = Double.parseDouble(totalValue);
+        return doubleTotal;
+    }
+
 }
