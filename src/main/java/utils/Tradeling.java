@@ -55,8 +55,13 @@ public class Tradeling {
         }
     }
 
-    public void navigateToUrl() {
-        String url = property.getProperty("config", "url");
+    public void navigateToBinanceHome() {
+        String url = property.getProperty("config", "binance.home.url");
+        driver.get(url);
+    }
+
+    public void navigateToBinanceETHBTCHome() {
+        String url = property.getProperty("config", "binance.eth.btc.home.url");
         driver.get(url);
     }
 
@@ -71,25 +76,25 @@ public class Tradeling {
         return element;
     }
 
-    public void takeSnapOfElement(WebElement webElement, String name){
+    public void takeSnapOfElement(WebElement webElement, String name) {
         try {
             Screenshot screenshot = new AShot()
                     .takeScreenshot(driver, webElement);
             ImageIO.write(screenshot.getImage(), "PNG",
                     new File("C:\\Users\\sprii\\Pictures\\tradeling_ss\\" + name + ".png"));
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public void takeFullSnap(String name){
+    public void takeFullSnap(String name) {
         try {
             Screenshot screenshot = new AShot()
                     .shootingStrategy(ShootingStrategies.viewportPasting(100))
                     .takeScreenshot(driver);
             ImageIO.write(screenshot.getImage(), "PNG",
                     new File("C:\\GITTest\\" + name + ".png"));
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
