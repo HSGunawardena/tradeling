@@ -37,7 +37,15 @@ I have prepared first two test cases using Java and Selenium WebDriver. I could 
 
 I did not posess knowledge about how WebSockets were tested initially. So, I had to find online resources to learn about WebSockets and how those were tested using Binance APIs. Some of the resources are listed below.
 
-I was able to use binance npm package to connect to binance websockets and retrieve some data. I have uploaded the ***index.js*** file to this same repository under a folder ***webSocket*** which contains the requests and responses I prepared. From that, I think we can prepare tests but as I have limited knowledge on this, I have prepared what I could at the moment.
+I was able to use binance npm package to connect to binance websockets and retrieve some data. I have uploaded the ***test03_method1.js*** file and ***test03_method2.js*** file to this same repository under a folder ***webSocket*** which contains the requests and responses I prepared. From that, I think we can prepare tests but as I have limited knowledge on this, I have prepared what I could at the moment.
+
+*_Both files contain more or less similar ways of doing the Acceptance Criteria 03._*
+
+In order to run the third test case, you will be needing to:
+1. Install node packages in your environment and download binance package from npm repositories.
+2. Then copy those two files into a folder.
+3. Then init the folder with npm init command.
+4. In order to run this you will be needing to execute node <filename>.js command
 
 #### Used Online Resources
 
