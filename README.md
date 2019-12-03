@@ -37,7 +37,7 @@ I have prepared first two test cases using Java and Selenium WebDriver. I could 
 
 I did not posess knowledge about how WebSockets were tested initially. So, I had to find online resources to learn about WebSockets and how those were tested using Binance APIs. Some of the resources are listed below.
 
-I was able to use binance npm package to connect to binance websockets and retrieve some data. I have uploaded the ***demo.js*** file to this same repository under a folder called ***test03*** which contains the requests and responses I prepared. From that, I think we can prepare tests but as I have limited knowledge on this, I have prepared what I could at the moment.
+I was able to use binance npm package to connect to binance websockets and retrieve some data. I have uploaded the ***index.js*** file to this same repository under a folder ***webSocket*** which contains the requests and responses I prepared. From that, I think we can prepare tests but as I have limited knowledge on this, I have prepared what I could at the moment.
 
 #### Used Online Resources
 
